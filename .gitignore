@@ -1,0 +1,7 @@
+**/.DS_Store
+users.db
+notes.db
+__pycache__
+web/node_modules
+web/build
+

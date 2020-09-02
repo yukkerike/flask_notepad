@@ -1,0 +1,15 @@
+#login_form{
+    border-radius: 0 !important;
+}
+
+.my-md-3{
+    margin: 1rem 0 !important;
+}
+
+@media (min-width: 576px) {
+    #login_form{
+        margin-top:10px;
+        box-shadow:0 1rem 3rem rgba(0,0,0,.175);
+    }
+}
+
