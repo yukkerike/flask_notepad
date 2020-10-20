@@ -19,7 +19,7 @@ class ProfilePage extends React.Component{
             return
         }
         this.setter({profile:[this.globalState.profile[0],this.login.value,this.email.value]})
-        window.location.href = '/#/home'
+        window.location.href = '#/home'
     }
     resolveDestroy = async () => {
         await Api.api("remove_user")

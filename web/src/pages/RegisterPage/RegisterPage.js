@@ -14,7 +14,7 @@ class RegisterPage extends React.Component{
             this.setState({showAlert:true, textAlert:req.response})
             setTimeout(()=>this.setState({showAlert:false}),5000)
         }else if (req.status === 2){
-            window.location.href = '/#/home'
+            window.location.href = '#/home'
         }
     }
     submit = (e) => {
@@ -32,7 +32,7 @@ class RegisterPage extends React.Component{
     }
     componentDidMount() {
         if (this.props.isLogged){
-            window.location.href = '/#/home'
+            window.location.href = '#/home'
         }
         let form = document.getElementById('login_form')
         form.addEventListener('submit', this.submit)

@@ -27,7 +27,7 @@ class Api{
         return res
     }
     static logout(){
-        window.location.href = '/#/login'
+        window.location.href = '#/login'
         this.deleteCookie('session')
         localStorage.removeItem('notes')
         localStorage.removeItem('sync_stamp')

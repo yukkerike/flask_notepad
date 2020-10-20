@@ -28,7 +28,7 @@ class EditPage extends React.Component{
         close_btn.classList.add('btn-secondary')
         clearTimeout(this.sync_timeout)
         this.sync().then(()=>{
-            window.location.href = '/#/home'
+            window.location.href = '#/home'
         })
     }
     componentDidMount() {
@@ -41,7 +41,7 @@ class EditPage extends React.Component{
                 note: note[2]
             })
         }catch (e) {
-            window.location.href = '/#/home'
+            window.location.href = '#/home'
         }
     }
     handleChange = (e) => {

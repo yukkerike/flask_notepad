@@ -19,7 +19,7 @@ class App extends React.Component{
             this.state.logged = Api.getCookie('session').length > 1
         }else{
             if (!window.location.href.match('forgot|register')) {
-                window.location.href = '/#/login'
+                window.location.href = '#/login'
             }
         }
         if (this.state.logged){
@@ -28,7 +28,7 @@ class App extends React.Component{
             let req = await Api.api('show_profile')
             if (req.status === 1){
                 this.sync_notes()
-                if (!window.location.href.match('profile|note')) window.location.href = '/#/home'
+                if (!window.location.href.match('profile|note')) window.location.href = '#/home'
                 this.setState({profile:req.response, ready:true})
             }
         }else{

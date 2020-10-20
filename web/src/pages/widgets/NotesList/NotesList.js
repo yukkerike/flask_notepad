@@ -24,7 +24,7 @@ class NotesList extends React.Component{
                 {this.notes.map((note)=>{
                     return(
                         <div key={note[0]} className="col" style={{marginBottom:10}}>
-                            <div className="card bg-light" onClick={()=>{window.location.href = '/#/home/note/'+note[0]}}>
+                            <div className="card bg-light" onClick={()=>{window.location.href = '#/home/note/'+note[0]}}>
                                 <div className="card-header navbar">
                                     <span>{note[1]}</span>
                                     <button className="btn btn-danger" style={{width: 38,height: 38,color: 'white'}} onClick={(e)=>{e.stopPropagation();this.remove_note(note[0])}}>
