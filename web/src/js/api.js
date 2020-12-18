@@ -1,5 +1,5 @@
 //const api_url = 'http://0.0.0.0:5000/api/'
-const api_url = '/api/'
+const api_url = window.location.protocol + "//" + window.location.host + '/api/'
 //'register', 'login', 'forgot_password', 'show_notes', 'show_note', 'add_note', 'edit_note', 'remove_note', 'show_profile', 'edit_profile', 'remove_user', 'get_sync_stamp'
 class Api{
     static async api(name, req={}, retry=true) {
